@@ -76,14 +76,10 @@ while loop:
   
     elif ask == "3":
         print("===You about to install Metasploit===")
-        os.system("pkg install -y wget")
-        os.system("cd /data/data/com.termux/files/home && wget https://Auxilus.github.io/metasploit.sh")
-        os.system("cd /data/data/com.termux/files/home && bash metasploit.sh")
-        os.system("cd /data/data/com.termux/files/home && cd metasploit-framework")
-        os.system("cd /data/data/com.termux/files/home && gem install bundle --pre")
-        os.system("cd /data/data/com.termux/files/home && bundle config build.nokogiri --use-system-libraries")
-        os.system("cd /data/data/com.termux/files/home && bundle install")
-        os.system("cd /data/data/com.termux/files/home")
+        os.system("pkg install wget")
+        os.system("wget https://raw.githubusercontent.com/gushmazuko/metasploit_in_termux/master/metasploit.sh")
+        os.system("chmod +x metasploit.sh")
+        os.system("./metasploit.sh")
         print("====================================")
         print("[+] Metasploit installed successfully :)")
         rmenu = input("[?] Start Metasploit? (y/n): ")
@@ -96,6 +92,13 @@ while loop:
         else:
             break
    
+
+
+
+
+
+
+
     
     elif ask == "4":
         print("===You about to install InstaHack===")
