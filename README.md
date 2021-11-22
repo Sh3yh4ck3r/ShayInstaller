@@ -5,8 +5,11 @@ From Sh3yh4ck3r and more upgrades will be made from this tool
 Sooner rather than later
 
 Installation:
+
 apt update && apt upgrade
+
 pkg install git
+
 git clone https://github.com/Sh3yh4ck3r/ShayInstaller.git
 
 Usage: 
